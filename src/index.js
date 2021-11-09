@@ -5,7 +5,7 @@ import TestApp from "./components/TestApp";
 import NameListProps from "./components/props-example/NameListProps";
 import MenuList from "./components/props-example/MenuList";
 import Car from "./components/state-example/Car";
-import Counter from "./events-examples/Counter";
+import Counter from "./components/events-examples/Counter";
 import Person from "./components/events-examples/Person";
 import NewPerson from "./components/events-examples/NewPerson";
 
@@ -18,4 +18,4 @@ const menus = [
     {name: 'About us', path:'/about'}
 ];
 
-ReactDOM.render(<NewPerson/>, document.getElementById("main"));
+ReactDOM.render(<Person/>, document.getElementById("main"));
