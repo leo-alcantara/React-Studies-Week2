@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css';
+import TestApp from "./components/TestApp";
+import NameListProps from "./components/props-example/NameListProps";
+import MenuList from "./components/props-example/MenuList";
+import Car from "./components/state-example/Car";
+import Counter from "./events-examples/Counter";
+import Person from "./components/events-examples/Person";
+import NewPerson from "./components/events-examples/NewPerson";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const myNames = ["Daryl Dixon", "Rick Grymes", "Meggy Greene"];
+
+const menus = [
+    {name: 'Home', path:'/home'},
+    {name: 'Register', path:'/register'},
+    {name: 'About us', path:'/about'}
+];
+
+ReactDOM.render(<NewPerson/>, document.getElementById("main"));
